@@ -1,0 +1,420 @@
+body, ul, li, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+nav ul.menu li {
+    margin: 0 15px;
+}
+
+nav ul.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul.menu a:hover, nav ul.menu a.active {
+    color: #fcdbef;
+}
+
+section {
+    padding: 40px 0;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.hero {
+    background-color: #c3d8e8;
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.about, .events, .newsletter {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+.button {
+    background-color: #2c3e50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+
+.button:hover {
+    color: #fcdbef;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    min-height: 70vh;
+}
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fcdbef;
+}
+
+a.active {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.logo {
+    height: 150px;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media(max-width:768px) {
+    .hamburger-menu {
+        display: block;
+        z-index: 15;
+        position: relative;
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        flex-direction: column;
+        background-color: #2c3e50;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        height: 100%;
+        z-index: 10;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(44, 62, 80, 0.9);
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        font-size: 2.1em;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .logo {
+        height: 150px;
+    }
+}
+
+.social-links {
+    padding-top: 5px;
+}
+
+.social-icon {
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.social-links a:hover .social-icon {
+    opacity: 0.7;
+}
+
+#leadership {
+    text-align: center;
+    padding: 50px 0;
+    font-family: sans-serif;
+    font-size: 1.9em;
+}
+
+.leader-card {
+    flex: 0 0 auto;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.leader-card h3, .leader-card p {
+    margin: 10px 0;
+}
+
+.leader-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.event-director-text {
+    font-size: 30px;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+.animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional styles for login form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.login-form div {
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styles for the auth buttons to be on the top right */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .button {
+    background-color: #c3d8e8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.auth-buttons .button:hover {
+    background-color: #2980b9;
+}
+
+.auth-buttons #welcomeMessage {
+    color: #ecf0f1;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+/* Styles for centering the logo and title */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.logo {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 0;
+    margin-top: -10px;
+}
+
+/* Ensure the header and nav elements don't have extra margins */
+header {
+    margin-bottom: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

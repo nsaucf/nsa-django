@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-se=n$8(sec4q8f#4lvf3^+_)e^z=*(a$14*6ch$&-hh_+-=pif
 DEBUG = True
 
 ALLOWED_HOSTS = ['nsa-web-68086ef644af.herokuapp.com','www.nsaucf.org','nsaucf.org']
+CSRF_TRUSTED_ORIGINS = ['https://www.nsaucf.org','https://nsaucf.org']
 
 
 # Application definition

@@ -82,4 +82,4 @@ To get started, clone the repo and `cd` into it. Then run the `start.sh` script 
 
 * Always pull the latest `main` before starting new work.
 * Use feature branches to keep history clean.
-* Only deploy `main` to Heroku.
+* Only deploy `main` to Heroku
